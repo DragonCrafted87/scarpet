@@ -221,6 +221,11 @@ Various scripts that modify various game elements, often replicating popular mod
 	https://www.youtube.com/watch?v=g7Ku73ElDBs
 	Cos im too lazy to write all the shit down.
 
+### throwable_fire_charges.sc:
+#### By Scott Gudeman (DragonCrafted87)
+	Throw Fire Charges does the same effecct as a blaze fireball
+	with a 2.5 second cooldown for survival players
+
 ### updater.sc
 #### By Firigion
 	Once loaded, right clicking an obsrever or budded block with a pice of bamboo will trigger or update it.
@@ -296,4 +301,5 @@ Various scripts that modify various game elements, often replicating popular mod
 	KingOfTheClouds
 	Firigion
 	boyenn
+	DragonCrafted87
 	(Many more hopefully!)
