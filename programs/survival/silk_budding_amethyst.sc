@@ -1,4 +1,4 @@
-// Conversion of Silk Spwaners; Implemented by Scott Gudeman (DragonCrafted87)
+// Conversion of Silk Spawners; Implemented by Scott Gudeman (DragonCrafted87)
 // See https://github.com/gnembon/scarpet/blob/master/programs/survival/silk_spawners.sc for Original Basis
 
 //keeps script loaded upon server start

@@ -178,7 +178,7 @@ Various scripts that modify various game elements, often replicating popular mod
 	It doesn't apply to containers and blacklisted blocks.
 
 ### silk_budding_amethyst.sc:
-#### By "Scott Gudeman" (DragonCcrafted87)
+#### By Scott Gudeman (DragonCrafted87)
 	Conversion of silk_spawners.sc
 	Allows to silk touch mine budding_amethyst if holding a diamond or netherite pick with silk touch.
 
@@ -223,7 +223,7 @@ Various scripts that modify various game elements, often replicating popular mod
 
 ### throwable_fire_charges.sc:
 #### By Scott Gudeman (DragonCrafted87)
-	Throw Fire Charges does the same effecct as a blaze fireball
+	Throw Fire Charges does the same effect as a blaze fireball
 	with a 2.5 second cooldown for survival players
 
 ### updater.sc
