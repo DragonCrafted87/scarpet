@@ -234,8 +234,7 @@ Various scripts that modify various game elements, often replicating popular mod
 	https://www.youtube.com/watch?v=g7Ku73ElDBs
 	Cos im too lazy to write all the shit down.
 
-<<<<<<< HEAD
-### throwable_fire_charges.sc:
+### [throwable_fire_charges.sc](https://github.com/gnembon/scarpet/blob/master/programs/survival/throwable_fire_charges.sc):
 #### By Scott Gudeman (DragonCrafted87)
 	Throw Fire Charges does the same effect as a blaze fireball
 	with a 2.5 second cooldown for survival players
