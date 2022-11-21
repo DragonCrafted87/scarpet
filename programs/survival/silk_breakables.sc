@@ -176,7 +176,8 @@ __break_block(debug, player, block_pos, block_name) -> (
     );
     break_sound && sound(str('minecraft:block.%s.break',break_sound), block_pos,1.0,1.0,'block');
     set(block_pos, 'air');
-    update(block_pos);
+    // do the block updates on the next tick as there's some inconsistency otherwise
+    schedule(1, '_adjacent_block_update', block_pos);
 
     slot = player~'selected_slot';
 
@@ -187,6 +188,17 @@ __break_block(debug, player, block_pos, block_name) -> (
         put(tool_nbt,'Damage',tool_damage + 1);
         inventory_set(player, slot, count, tool, tool_nbt);
     );
+);
+
+_adjacent_block_update(block_pos) ->
+(
+    update(block_pos);
+    update(pos_offset(block_pos, 'x', 1));
+    update(pos_offset(block_pos, 'x', -1));
+    update(pos_offset(block_pos, 'y', 1));
+    update(pos_offset(block_pos, 'y', -1));
+    update(pos_offset(block_pos, 'z', 1));
+    update(pos_offset(block_pos, 'z', -1));
 );
 
 __on_player_clicks_block(player, block, face) ->
@@ -254,6 +266,8 @@ _break(debug, player, block_pos, block_name, step, lvl) ->
         )
     );
 );
+
+
 
 // unbreak BlockEntityData for spawners (security risk on creative servers)
 // mojang intentionally disabled this for a reason, but we need it.
